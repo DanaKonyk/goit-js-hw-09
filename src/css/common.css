@@ -16,3 +16,44 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer-box {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+#datetime-picker {
+  font-family: 'Trocchi', serif;
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #7c795d;
+}
+
+.start-btn {
+  font-family: 'Trocchi', serif;
+  font-size: 15px;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  border-color: #7c795d;
+  ;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.value {
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0;
+}
