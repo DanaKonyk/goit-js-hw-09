@@ -13,6 +13,7 @@ const seconds = document.querySelector("[data-seconds]");
 
 let timerId;
 let choosenDate;
+startBtn.disabled = true;
 
 flatpickr (
     input, {
@@ -23,7 +24,6 @@ flatpickr (
         onClose(selectedDates) {
             if (selectedDates[0] <= Date.now()) {
                 Notiflix.Notify.failure('Please choose a date in the future');
-                startBtn.disabled = true;
             } else {
                 startBtn.disabled = false;
                 choosenDate = selectedDates[0];
